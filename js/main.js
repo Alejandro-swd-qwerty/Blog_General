@@ -37,7 +37,7 @@ function getDataFromModal(){
 
     let postObject = {title, preview, content, imgUrl, createDate}
     console.log(postObject);
-    
+    putsData(postObject);
 };
 
 function putsData(postObject){
@@ -76,5 +76,10 @@ function fillWithPosts(postsData){
             </div>
         `)
     })  
+}
+
+
+function getDataFromButton(){
+    $("#submit-entry").on("click",getDataFromModal());
 }
 
