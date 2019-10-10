@@ -2,6 +2,9 @@
     height: 8vh;
     font-size: 0.9rem;
     text-align: start;
-    
-    
+}
+
+#txtGuide{
+    font-size: 0.5rem;
+    color: red;
 }
