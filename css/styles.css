@@ -8,3 +8,51 @@
     font-size: 0.5rem;
     color: red;
 }
+
+
+#responsAside {
+    height: 50px;
+    width: 100px;
+  }
+  #responAside{
+    width: 100%;
+  }
+  hr{
+    border-top: 5px;
+  }
+  .title-Popular {
+    padding-top: 10px;
+    text-align: center;
+    font-family: medium-content-sans-serif-font,"Lucida Grande";
+    height: auto;
+  }
+  .number-Aside {
+    text-align: center;
+    width:300px;
+    font-family: medium-content-sans-serif-font,"Lucida Grande";
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px; 
+   }
+  
+   .text-Table{
+     text-align: left;
+     font-family: medium-content-sans-serif-font,"Lucida Grande";
+     padding-left: 5px;
+    padding-right: 5px;
+    line-height: 18px;
+    font-size: 20px
+    
+  
+   }
+   .title-Aside {
+    font-weight: bold;
+  }
+  .creation-Aside{
+    font-style: italic
+  }
+  tr:hover{
+    /* background-color: gainsboro; */
+    color: lightgrey;
+    transition: .5s;
+  }
