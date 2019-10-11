@@ -1,7 +1,5 @@
 //Obtener los datos del objeto JSON
 
-
-
 const getPosts = () => {
     $.ajax({ //se llama a Jquery y se usa el método ajax
         method:"GET", // el método para jalar los objetos es get
@@ -15,18 +13,6 @@ const getPosts = () => {
 }
 
 getPosts() //aqui podria esta la funcion de loadingview pero si no hay màs que una pagina, pos mejor solo asì
-
-const putsData = (response) => {
-    $.ajax({
-        method:"POST",
-        url: 'https://blog-general.firebaseio.com/post/.json',
-        data: JSON.stringify(response),
-        success: (response) => {
-  //          console.log(response)
-        }
-    });
-}
-
 
 const fillWithPosts = (postsData) => {
 //    $(".container").empty(); //creo que es este el div que sì va a cambiar
@@ -78,12 +64,12 @@ const fillWithPosts = (postsData) => {
     }) 
 }
 
-
+/*
 const loadingView = (viewUrl, funcionALlamar) => {
     $(".container").load(viewUrl,funcionALlamar); // se llama a la parte del wrapper o contenedor que va a estar cambiando, se llama a la función para obtener los posts o publicarlos, o eliminarlos, yo qé sé
 }
 
-
+*/
 
 const getDataFromButton = () => {
 
@@ -103,15 +89,13 @@ const getDataFromModal = () => {
     putsData(postObject);
 };
 
-
-
-
-
-
-
-
-
-
-
-
-   
+const putsData = (response) => {
+    $.ajax({
+        method:"POST",
+        url: 'https://blog-general.firebaseio.com/post/.json',
+        data: JSON.stringify(response),
+        success: (response) => {
+            console.log(response)
+        }
+    });
+}
