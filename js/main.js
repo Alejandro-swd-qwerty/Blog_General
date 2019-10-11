@@ -3,6 +3,10 @@
 function getPosts(){
     $.ajax({ //se llama a Jquery y se usa el método ajax
         method:"GET", // el método para jalar los objetos es get
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 365a9ef91420e4558c6e1f76f86895b07be422d9
         url: "https://blog-5g.firebaseio.com/blog/posts/.json",
         //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
         success: (response) => {
@@ -36,6 +40,16 @@ function fillWithPosts(postsData){
             </div>
         `)
     })  
+<<<<<<< HEAD
+=======
+=======
+        url: "https://blog-5g.firebaseio.com/blog/posts/.json", //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
+        success: ((response) => {
+            putsData(response);//success: //se tiene que poner una función, cuando no hay errores. Esto debe de ser la plantilla para meter la colección de objetos
+    })
+});
+>>>>>>> be20c5d58d8ce756b93b345a175a72c813814732
+>>>>>>> 365a9ef91420e4558c6e1f76f86895b07be422d9
 }
 
 
@@ -73,8 +87,15 @@ function getDataFromModal(){
 
 
 
+<<<<<<< HEAD
 function getDataFromButton(){
 
+=======
+
+
+function getDataFromButton(){
+<<<<<<< HEAD
+>>>>>>> 365a9ef91420e4558c6e1f76f86895b07be422d9
     $("#submit-entry").on("click",getDataFromModal())
 }
 
