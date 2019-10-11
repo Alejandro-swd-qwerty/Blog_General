@@ -43,8 +43,6 @@ function putsData(postObject){
 }
 
 
-
-
 function getDataFromButton(){
     $("#submit-entry").on("click",getDataFromModal());
 }
