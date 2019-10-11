@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mediun Chafa</title>
+    <title>Mediun Clone</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -65,23 +65,14 @@
                             <input id="title" name="title" type="text" class="form-control txtGuide"  placeholder="Titulo de tu post"/>
                           </div>
                           <div class="form-group">
-                            <label  >Descripción</label>
-                            <input
-                              id="preview"
-                              name="preview"
-                              type="text"
-                              class="form-control txtGuide"
-                              placeholder="Descripción breve de tu post"/>
+                            <label for="exampleInputPassword1"
+                              >Descripción</label
+                            >
+                            <textarea class="form-control" id="preview" rows="3" placeholder="Describe en breve tu post"></textarea>
                           </div>
-                          <div class="form-group">
-                            <label>Contenido del post</label>
-                            <input
-                              id="content"
-                              name="content"
-                              type="text"
-                              class="form-control txtGuide"
-                              placeholder="Ingresa tu post"
-                            />
+                          <div class="form-group" rows="5">
+                            <label for="exampleInputPassword1">Contenido del post</label>
+                            <textarea class="form-control" id="content" rows="3" placeholder="Ingresa tu post"></textarea>
                           </div>
                           <div class="form-group">
                             <label >URL de la imagen</label>
@@ -202,16 +193,48 @@
         <!--END-Row-Contenido Dinamico-->
 
         <!--Row #2  Estatico-->
-        <div class="col-4">
-          <div class="row">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
+     <!--REGION DE ASIDE-->
+  <aside id="responsAside">
+    <h3 class="title-Popular">Popular on Medium</h3>
+    <hr>
+      <table>
+        <tr>
+          <td class="number-Aside">01</td>
+          <td class="text-Table">
+            <p class="title-Aside">Lo que realmente sucede cuando te conviertes en millonario</p>
+            <p class="text-Aside">Isaac Mendoza</p>
+            <p class="creation-Aside">10 de Octubre</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="number-Aside">02</td>
+          <td class="text-Table">
+            <p class="title-Aside">¿Como despertar a las 5 de la mañana?</p>
+            <p class="text-Aside">Isaac Mendoza</p>
+            <p class="creation-Aside">10 de Octubre</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="number-Aside">03</td>
+          <td  class="text-Table">
+            <p class="title-Aside">¿Por que programar por cuenta propia, te 
+              convierte en mejor programador</p>
+            <p class="text-Aside">Miguel Aceves</p>
+            <p class="creation-Aside">10 de Octubre</p>
+          </td>
+        </tr>
+        <tr>
+          <td class="number-Aside">04</td>
+          <td  class="text-Table">
+            <p class="title-Aside">Una guía extremadamente completa para la 
+              temporada de gripe de este año</p>
+            <p class="text-Aside">Miguel Aceves</p>
+            <p class="creation-Aside">10 de Octubre</p>
+          </td>
+        </tr>
+      </table>
+  </aside>
+  
         <!--END Row #2 Estatico-->
       </div>
       <!--END-Contenido Dinamico-->
