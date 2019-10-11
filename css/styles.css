@@ -1,3 +1,43 @@
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.8rem;
+  }
+.titles-big{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+  }
+.titles-little{
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: black;
+  }
+.pharagraph-gray{
+    font-size: 0.8rem;
+    color: slategray;
+  }
+.pharagraph-gray a{
+    text-decoration-line: underline;
+  }
+.navbar-style{
+    font-family: Helvetica;
+    font-size: 14px;
+  }
+.navbar-style:hover{
+    color: black;
+    cursor: pointer;
+  }
+.features-text{
+    color: green;
+  }
+.profile-image{
+    border-radius: 150px;
+  }
+.card-medium-img{
+      height: 75px;
+  }
+
 #callNewPostFormBtn{
     height: 8vh;
     font-size: 0.9rem;
@@ -9,8 +49,7 @@
     color: red;
 }
 
-
-#responsAside {
+  #responsAside {
     height: 50px;
     width: 100px;
   }
@@ -56,3 +95,38 @@
     color: lightgrey;
     transition: .5s;
   }
+
+
+  /*estilos de la card y modal*/
+
+#card-image{
+    width: 220px;
+    height: 220px;
+}
+
+#card-sample{
+
+}
+#card-sample-text-btn{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+#card-sample-title-btn{
+    font-size: 1.2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#card-sample-content{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 0.9rem;
+}
+
+#card-sample-date{
+    color: gray;
+}
+
+/*estilos de la card y modal*/
