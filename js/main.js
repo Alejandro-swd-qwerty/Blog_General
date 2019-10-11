@@ -9,7 +9,7 @@ const getPosts = () => {
         //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
         success: (response) => {
             fillWithPosts(response)
-            console.log(response)
+ //           console.log(response)
          }
     });
 }
@@ -22,14 +22,14 @@ const putsData = (response) => {
         url: 'https://blog-general.firebaseio.com/post/.json',
         data: JSON.stringify(response),
         success: (response) => {
-            console.log("Esta es la respuesta de POST " + response)
+  //          console.log(response)
         }
     });
 }
 
 
 const fillWithPosts = (postsData) => {
-    $(".container").empty(); //creo que es este el div que sì va a cambiar
+//    $(".container").empty(); //creo que es este el div que sì va a cambiar
     console.log(postsData);
     $.each(postsData, (index,value) => {
         $("#content-wrapper").append(`
@@ -75,7 +75,7 @@ const fillWithPosts = (postsData) => {
           </div>
         <!--Modal END-->
         `)
-    })  
+    }) 
 }
 
 
