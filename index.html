@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Mediun Clone</title>
+    <title>Mediun Chafa</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -65,14 +65,23 @@
                             <input id="title" name="title" type="text" class="form-control txtGuide"  placeholder="Titulo de tu post"/>
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputPassword1"
-                              >Descripción</label
-                            >
-                            <textarea class="form-control" id="preview" rows="3" placeholder="Describe en breve tu post"></textarea>
+                            <label  >Descripción</label>
+                            <input
+                              id="preview"
+                              name="preview"
+                              type="text"
+                              class="form-control txtGuide"
+                              placeholder="Descripción breve de tu post"/>
                           </div>
-                          <div class="form-group" rows="5">
-                            <label for="exampleInputPassword1">Contenido del post</label>
-                            <textarea class="form-control" id="content" rows="3" placeholder="Ingresa tu post"></textarea>
+                          <div class="form-group">
+                            <label>Contenido del post</label>
+                            <input
+                              id="content"
+                              name="content"
+                              type="text"
+                              class="form-control txtGuide"
+                              placeholder="Ingresa tu post"
+                            />
                           </div>
                           <div class="form-group">
                             <label >URL de la imagen</label>
@@ -105,7 +114,7 @@
       <!--Row #1 Estatico-->
       <div class="container">
         <div class="row">
-          <div class="col-4">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
             <div class="card">
               <img src="https://miro.medium.com/max/2121/1*sfoR0J9GcPfzx2Gv6h3kOw.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -114,7 +123,7 @@
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4">
             <div class="card p-3" style="height: 30%;">
               <div class="row no-gutters">
                 <div class="col-md-4">
@@ -148,7 +157,7 @@
                   <div class="col-md-4">
                       <img class="card-medium-img" src="https://picsum.photos/77" class="card-img" class="card-img" alt="...">
                   </div>
-                  <div class="col-md-8">
+                  <div class="col-md-8 ">
                     <div class="card-body">
                       <h6 class="titles-little card-title">The Biggest Lie About Parentig</h6>
                       <p class="pharagraph-gray card-text">You´ll never do it ´right´-because right...</p>
@@ -158,15 +167,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-4">
-                <div class="card p-3" style="height:20%">
-                    <img src="https://miro.medium.com/max/5615/1*jw-6cZ6w-Lr508dzEpp3qg.jpeg" class="card-img-top" alt="...">
-                </div>
-                <div class="card-body">
-                    <h5 class="titles-big card-title">The NBA Fan Silenced for Protesting China Speaks Out</h5>
-                    <p class="pharagraph-gray card-text">‘These are not American values’</p>
-                    <p class="card-text">‘Oct 5 . 6 min read ’</p>
-                </div>
+            <div class="col-12 col-sm-12 d-sm-none col-md-12 d-md-none col-lg-4 d-lg-block">
+              <div class="card p-3" style="height:20%">
+                <img src="https://miro.medium.com/max/5615/1*jw-6cZ6w-Lr508dzEpp3qg.jpeg" class="card-img-top" alt="...">
+              </div>
+              <div class="card-body">
+                <h5 class="titles-big card-title">The NBA Fan Silenced for Protesting China Speaks Out</h5>
+                <p class="pharagraph-gray card-text">‘These are not American values’</p>
+                <p class="card-text">‘Oct 5 . 6 min read ’</p>
+              </div>
+            </div>
           </div>
         </div>
     </div>
@@ -193,48 +203,16 @@
         <!--END-Row-Contenido Dinamico-->
 
         <!--Row #2  Estatico-->
-     <!--REGION DE ASIDE-->
-  <aside id="responsAside">
-    <h3 class="title-Popular">Popular on Medium</h3>
-    <hr>
-      <table>
-        <tr>
-          <td class="number-Aside">01</td>
-          <td class="text-Table">
-            <p class="title-Aside">Lo que realmente sucede cuando te conviertes en millonario</p>
-            <p class="text-Aside">Isaac Mendoza</p>
-            <p class="creation-Aside">10 de Octubre</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="number-Aside">02</td>
-          <td class="text-Table">
-            <p class="title-Aside">¿Como despertar a las 5 de la mañana?</p>
-            <p class="text-Aside">Isaac Mendoza</p>
-            <p class="creation-Aside">10 de Octubre</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="number-Aside">03</td>
-          <td  class="text-Table">
-            <p class="title-Aside">¿Por que programar por cuenta propia, te 
-              convierte en mejor programador</p>
-            <p class="text-Aside">Miguel Aceves</p>
-            <p class="creation-Aside">10 de Octubre</p>
-          </td>
-        </tr>
-        <tr>
-          <td class="number-Aside">04</td>
-          <td  class="text-Table">
-            <p class="title-Aside">Una guía extremadamente completa para la 
-              temporada de gripe de este año</p>
-            <p class="text-Aside">Miguel Aceves</p>
-            <p class="creation-Aside">10 de Octubre</p>
-          </td>
-        </tr>
-      </table>
-  </aside>
-  
+        <div class="col-4">
+          <div class="row">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
         <!--END Row #2 Estatico-->
       </div>
       <!--END-Contenido Dinamico-->
