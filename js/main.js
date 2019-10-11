@@ -85,4 +85,4 @@ getPosts() //aqui podria esta la funcion de loadingview pero si no hay màs que 
 
 
 
-    $(".container").load('views/modal.html'); // se llama a la parte del wrapper o contenedor que va a estar cambiando, se llama a la función para obtener los posts o publicarlos, o eliminarlos, yo qé sé
+   
