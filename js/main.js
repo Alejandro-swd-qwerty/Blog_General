@@ -42,6 +42,17 @@ function loadingView(viewUrl, funcionALlamar){
 }
 
 
+function putsData(postObject){
+    $.ajax({
+        method:"POST",
+        url: 'https://blog-5g.firebaseio.com/blog/posts/.json',
+        data: JSON.stringify(postObject),
+        success: (response) => {
+            console.log(response)
+        }
+    });
+}
+
 
 
 function getDataFromModal(){
@@ -57,16 +68,7 @@ function getDataFromModal(){
     putsData(postObject);
 };
 
-function putsData(postObject){
-    $.ajax({
-        method:"POST",
-        url: 'https://blog-5g.firebaseio.com/blog/posts/.json',
-        data: JSON.stringify(postObject),
-        success: (response) => {
-            console.log(response)
-        }
-    });
-}
+
 
 
 
