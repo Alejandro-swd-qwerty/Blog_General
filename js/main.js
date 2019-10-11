@@ -3,6 +3,7 @@
 function getPosts(){
     $.ajax({ //se llama a Jquery y se usa el método ajax
         method:"GET", // el método para jalar los objetos es get
+<<<<<<< HEAD
         url: "https://blog-5g.firebaseio.com/blog/posts/.json",
         //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
         success: (response) => {
@@ -36,8 +37,14 @@ function fillWithPosts(postsData){
             </div>
         `)
     })  
+=======
+        url: "https://blog-5g.firebaseio.com/blog/posts/.json", //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
+        success: ((response) => {
+            putsData(response);//success: //se tiene que poner una función, cuando no hay errores. Esto debe de ser la plantilla para meter la colección de objetos
+    })
+});
+>>>>>>> be20c5d58d8ce756b93b345a175a72c813814732
 }
-
 
 
 function loadingView(viewUrl, funcionALlamar){
@@ -76,10 +83,15 @@ function getDataFromModal(){
 
 
 
-
 function getDataFromButton(){
+<<<<<<< HEAD
     $("#submit-entry").on("click",getDataFromModal())
 }
 
 
 getPosts() //aqui podria esta la funcion de loadingview pero si no hay màs que una pagina, pos mejor solo asì
+=======
+    $("#submit-entry").on("click",getDataFromModal());
+}
+ 
+>>>>>>> be20c5d58d8ce756b93b345a175a72c813814732
