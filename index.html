@@ -59,53 +59,29 @@
                     <div class="row">
                       <div class="col-12 mt-3">
                         <h2>Crea tu post</h2>
-                        <form class="border rounded bg-light p-1">
+                        <form class="border rounded bg-light p-1"  id="dataForm">
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Título</label>
-                            <input
-                              id="title"
-                              type="text"
-                              class="form-control txtGuide"
-                              id="exampleInputEmail1"
-                              aria-describedby="emailHelp"
-                              placeholder="Titulo de tu post"
-                            />
+                            <label>Título</label>
+                            <input id="title" name="title" type="text" class="form-control txtGuide"  placeholder="Titulo de tu post"/>
                           </div>
                           <div class="form-group">
                             <label for="exampleInputPassword1"
                               >Descripción</label
                             >
                             <textarea class="form-control" id="preview" rows="3" placeholder="Describe en breve tu post"></textarea>
-                            <!--<input
-                              id="preview"
-                              type="text"
-                              class="form-control txtGuide"
-                              id="exampleInputPassword1"
-                              placeholder="Descripción breve de tu post"
-                            />-->
                           </div>
                           <div class="form-group" rows="5">
                             <label for="exampleInputPassword1">Contenido del post</label>
                             <textarea class="form-control" id="content" rows="3" placeholder="Ingresa tu post"></textarea>
-                            <!--<input
-                              id="content"
-                              type="text"
-                              class="form-control txtGuide"
-                              id="exampleInputPassword1"
-                              placeholder="Ingresa tu post"
-                            />-->
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputPassword1"
-                              >URL de la imagen</label
-                            >
+                            <label >URL de la imagen</label>
                             <input
                               id="imgUrl"
+                              name="imgUrl"
                               type="text"
-                              class="form-control txtGuide"
-                              id="exampleInputPassword1"
-                              placeholder="URL de tu imagen"
-                            />
+                              class="form-control txtGuide"                        
+                              placeholder="URL de tu imagen"/>
                           </div>
                         </form>
                       </div>
@@ -113,16 +89,11 @@
                   </div>
                 </div>
                 <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-dismiss="modal"
-                  >
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">
                     Close
                   </button>
-                  <button onclick="getDataFromModal()" type="button" id="submit-entry" class="btn btn-primary">
-                    Subir Post
-                  </button>
+                  <button type="submit" class="btn btn-success" onclick="getDataFromModal()">Enviar Post</button>
+
                 </div>
               </div>
             </div>
