@@ -5,7 +5,10 @@ function getPosts(){
         method:"GET", // el método para jalar los objetos es get
         url: "https://blog-5g.firebaseio.com/blog/posts/.json",
         //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
-        success: (response) => {putsData(response) }
+        success: (response) => {
+            putsData(response)
+            console.log(response)
+         }
     });
 }
 
@@ -77,3 +80,6 @@ function getDataFromModal(){
 function getDataFromButton(){
     $("#submit-entry").on("click",getDataFromModal())
 }
+
+
+getPosts() //aqui podria esta la funcion de loadingview pero si no hay màs que una pagina, pos mejor solo asì
