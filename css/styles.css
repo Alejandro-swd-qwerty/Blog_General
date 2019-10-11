@@ -56,3 +56,45 @@
     color: lightgrey;
     transition: .5s;
   }
+
+  /* header 1 static */
+  .text{
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 0.8rem;
+  }
+  .titles-big{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+  }
+  .titles-little{
+    font-size: 1.0rem;
+    font-weight: 500;
+    color: black;
+  }
+  .pharagraph-gray{
+    font-size: 0.8rem;
+    color: slategray;
+  }
+  .pharagraph-gray a{
+    text-decoration-line: underline;
+  }
+  .navbar-style{
+    font-family: Helvetica;
+    font-size: 14px;
+  }
+  .navbar-style:hover{
+    color: black;
+    cursor: pointer;
+  }
+  .features-text{
+    color: green;
+  }
+  .profile-image{
+    border-radius: 150px;
+  }
+  .card-medium-img{
+      height: 75px;
+  }
+  /* /////// */
