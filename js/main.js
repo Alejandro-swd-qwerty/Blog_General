@@ -3,7 +3,7 @@
 function getPosts(){
     $.ajax({ //se llama a Jquery y se usa el método ajax
         method:"GET", // el método para jalar los objetos es get
-        url: "https://blog-5g.firebaseio.com/blog/posts/.json",
+        url: "https://blog-5g.firebase  io.com/blog/posts/.json",
         //hay que poner la url, que puede ser  "https://blog-5g.firebaseio.com/blogGeneral/posts/.json" 
         success: (response) => {
             putsData(response)
