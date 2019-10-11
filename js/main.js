@@ -90,8 +90,3 @@ function getDataFromButton(){
 
 
 getPosts() //aqui podria esta la funcion de loadingview pero si no hay màs que una pagina, pos mejor solo asì
-=======
-    $("#submit-entry").on("click",getDataFromModal());
-}
- 
->>>>>>> be20c5d58d8ce756b93b345a175a72c813814732
